@@ -1,0 +1,75 @@
+/**
+ *
+ * Estilização para a lista de contatos
+ * @author Edy Segura
+ *
+ */
+ 
+@import url("form.css");
+@import url("table.css");
+
+*  {
+	margin:0;
+	padding:0;
+	font:normal 12px Arial;
+	color:#555;
+} 
+
+body {
+	background:#B4C5E1;
+}
+
+div#header {
+	background:url("images/bg-h1.jpg") repeat-x scroll center bottom transparent;
+	display:table;
+	margin-bottom:10px;
+	width:100%;
+}
+
+h1 {
+	color:#fff;
+	font-family:Arial;
+	font-size:18px;
+	margin:4px 6px 7px;
+	float:left;
+}
+
+div.dados-user {
+	float:right;
+	margin:10px 12px 0 0;
+}
+
+div.dados-user a {
+	font-weight:bold;
+	color:#fff;
+}
+
+div.dados-user strong {
+	font-weight:bold;
+}
+
+div.dados-user span, div.dados-user strong {
+	color:#DFE6F2;
+}
+
+div.actions {
+	float:right;
+	margin:0 6px 2px 0;
+}
+
+a {
+	color:#316EA2;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a.voltar {
+	background:url("images/voltar.png") no-repeat scroll 0 -4px transparent;
+	display:block;
+	font-weight:bold;
+	margin-bottom:9px;
+	padding:0 0 0 23px;
+}

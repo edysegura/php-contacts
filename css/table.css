@@ -1,0 +1,74 @@
+/**
+ *
+ * Definicoes para as tabelas das paginas
+ * @author Lidiane, lidiane@liveware.com.br
+ *
+ */
+
+table {
+	clear:both;
+	margin:0 auto;
+	table-layout:fixed;
+	width:99%;
+	border:1px solid #E7E7E7;
+}
+
+table, table thead, table thead tr, table thead {
+	background:#fff;
+}
+
+table thead th {
+	background:url(images/degrade.gif) repeat-x scroll 0 0 #385585;
+	font-weight:bold;
+	color:#fff;
+}
+
+table tbody tr {	background:#FFF; }
+table tbody tr.normal { background:#DFE6F2; }
+table tbody tr.alternada {	background:#F8FBFC; }
+table tbody tr:hover td, table tbody tr:hover th { background:#ECFBD4 !important; }
+
+table tbody td {
+	height:20px;
+	padding:1px 1px 1px 3px;
+}
+
+table a {
+	color:#1A5C8E;
+}
+
+table col.email { width:230px;}
+table col.foto { width:33px;}
+table col.remover { width:20px; }
+
+a.new {
+	text-align:right;
+	font-weight:bold;
+}
+
+th, td {
+	padding:0.4em;
+	text-align:left;
+}
+
+a.ico-remover {
+	background:url("images/img-remover.gif") no-repeat scroll 0 2px transparent;
+}
+
+a.ico-foto {
+	background:url("images/img-foto.png") no-repeat scroll 0 0 transparent;
+	margin-left:6px;
+}
+
+a.ico-remover, a.ico-foto {
+	display:block;
+	float:left;
+	height:16px;
+	text-indent:-99999px;
+	width:16px;
+}
+
+a.edit:hover {
+	background:url("images/img-edit.gif") no-repeat right transparent;
+	padding-right:16px;
+}
