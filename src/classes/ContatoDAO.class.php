@@ -13,7 +13,7 @@ class ContatoDAO {
 	public function __construct() {
 		//O ideal seria chamar um ConnectionFactory
 		//PDO = PHP Data Object, equivalente ao JDBC do java
-		$this->pdo = new PDO("mysql:host=mysql.webengineers.com.br;dbname=minicursophp_contatos", "minicursophp", "minicursophp");
+		$this->pdo = new PDO("mysql:host=mysql-database;dbname=minicursophp_contatos", "minicursophp", "minicursophp");
 	}
 	
 	/**
