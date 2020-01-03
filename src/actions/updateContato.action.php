@@ -9,8 +9,8 @@ $id = "";
 $contato = new Contato();
 
 if(isset($_GET['id']) && !empty($_GET['id'])) {
-	$id = (int) $_GET['id'];
-	$dao = new ContatoDAO();
-	$contato = $dao->getById($id);
+  $id = (int) $_GET['id'];
+  $dao = new ContatoDAO();
+  $contato = $dao->getById($id);
 }
 ?>

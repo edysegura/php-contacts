@@ -12,21 +12,21 @@
 <body>
 
 <form action="main.php" method="post">
-	<fieldset>
-		<legend>Login</legend>
-		
-		<label for="username">
-			Usuário: 
-			<input type="text" class="user" name="username" id="username" value="userdemo" />	
-		</label>
-		
-		<label for="password">
-			Senha: 
-			<input type="password" class="pass" name="password" id="password" value="userdemo" />
-		</label>
-		<p class="download"><a href="http://files.edysegura.com/labs/contato-php.zip">Download deste projeto</a></p>
-		<input type="submit" class="button" value="Entrar" />
-	</fieldset>
+  <fieldset>
+    <legend>Login</legend>
+
+    <label for="username">
+      Usuário:
+      <input type="text" class="user" name="username" id="username" value="userdemo" />
+    </label>
+
+    <label for="password">
+      Senha:
+      <input type="password" class="pass" name="password" id="password" value="userdemo" />
+    </label>
+    <p class="download"><a href="http://files.edysegura.com/labs/contato-php.zip">Download deste projeto</a></p>
+    <input type="submit" class="button" value="Entrar" />
+  </fieldset>
 </form>
 
 </body>

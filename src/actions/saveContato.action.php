@@ -15,19 +15,18 @@ $dao = new ContatoDAO();
 $result = false;
 
 if(empty($_POST['id'])) {
-	$result = $dao->insert($contato);
+  $result = $dao->insert($contato);
 }
 else {
-	$result = $dao->update($contato);
+  $result = $dao->update($contato);
 }
 
 if($result) {
-	//header é um método nativo para realizar redirencioamentos ou 
-	//configurações de cabeçalhos
-	header("Location: ../main.php?success=true");
+  //header é um método nativo para realizar redirencioamentos ou
+  //configurações de cabeçalhos
+  header("Location: ../main.php?success=true");
 }
 else {
-	header("Location: ../formContato.php?fail=true");
+  header("Location: ../formContato.php?fail=true");
 }
-
 ?>
