@@ -2,7 +2,10 @@ version: '3'
 
 services:
   db:
-    image: mysql:5.7
+    build:
+      dockerfile: ./docker/database.dockerfile
+      context: .
+    image: contact/mysql-database
     container_name: mysql-database
     environment:
       MYSQL_ROOT_PASSWORD: my_secret_pw_shh
@@ -10,13 +13,13 @@ services:
       MYSQL_USER: minicursophp
       MYSQL_PASSWORD: minicursophp
     ports:
-      - "3306"
+      - "3306:3306"
   web:
     build:
-      dockerfile: ./Dockerfile
+      dockerfile: ./docker/web.dockerfile
       context: .
-    image: php-pdo-mysql
-    container_name: php_web
+    image: contact/php-web
+    container_name: php-web
     depends_on:
       - db
     volumes:
