@@ -108,7 +108,8 @@ form.cad input {
 }
 
 form.cad fieldset legend {
-	width:118px !important;
+	width:120px !important;
+	padding: 5px;
 }
 
 form .buttons input {
