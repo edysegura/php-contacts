@@ -26,5 +26,3 @@ services:
       - ./src/:/var/www/html/
     ports:
       - "8100:80"
-    stdin_open: true
-    tty: true
